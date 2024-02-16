@@ -20,7 +20,7 @@ except psycopg2.Error as e:
 try:
     cur.execute("""
     COPY website_traffic FROM 's3://web-analytics-input/analytics_input.csv'
-    CREDENTIALS 'aws_iam_role=arn:aws:iam::325297895154:role/web-analytics-redshift-s3'
+    CREDENTIALS 'aws_iam_role=arn:aws:iam::your role'
     DELIMITER ','
     IGNOREHEADER 1
     REMOVEQUOTES
