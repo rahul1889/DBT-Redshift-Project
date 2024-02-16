@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: final_website_traffic
+    description: "Transformed and cleaned web analytics data"
+    columns:
+      - name: website
+        description: "The website associated with the data"
+        tests:
+          - not_null
+      - name: year
+        description: "The year of the data"
+        tests:
+          - not_null
+      - name: page_path
+        description: "The path of the page"
+        tests:
+          - not_null
+      - name: total_pageviews
+        description: "Total pageviews for the page"
+        tests:
+          - not_null
+      - name: average_time_on_page
+        description: "Average time spent on the page"
+        tests:
+          - not_null
+      - name: entrances
+        description: "Number of entrances to the page"
+        tests:
+          - not_null
+      - name: bounce_rate
+        description: "Bounce rate for the page"
+        tests:
+          - not_null
+      - name: exit_rate
+        description: "Exit rate for the page"
+        tests:
+          - not_null
